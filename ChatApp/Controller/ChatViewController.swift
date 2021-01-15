@@ -9,9 +9,15 @@ import UIKit
 
 class ChatViewController : UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var messageTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func sendPressed(_ sender: UIButton) {
+    }
 }

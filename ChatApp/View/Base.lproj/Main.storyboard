@@ -35,6 +35,9 @@
                                 <state key="normal" title="Register">
                                     <color key="titleColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qgt-vP-kbW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeK-Cg-m0O">
                                 <rect key="frame" x="0.0" y="802" width="414" height="60"/>
@@ -46,6 +49,9 @@
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="logInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="INl-hQ-Zhh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -61,6 +67,9 @@
                             <constraint firstItem="C8y-FR-UbR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tx8-i9-bWx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="appName" destination="zVj-0I-mdZ" id="bHy-iV-AYJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,9 +95,12 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
+                                        <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="registerPressed:" destination="onZ-oZ-u0C" eventType="touchUpInside" id="lgV-qw-ejc"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IaU-vb-qY6">
                                 <rect key="frame" x="5" y="64" width="404" height="120"/>
@@ -132,6 +144,10 @@
                             <constraint firstItem="YeY-UC-Vqe" firstAttribute="top" secondItem="IaU-vb-qY6" secondAttribute="bottom" constant="50" id="vOh-fi-SKG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextfield" destination="VUP-57-6y4" id="IZh-bW-7Va"/>
+                        <outlet property="passwordTextfield" destination="fq0-G7-4uG" id="5Gi-gj-TGb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HMX-iL-lFg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -173,10 +189,13 @@
                                             <constraint firstAttribute="width" constant="80" id="sTg-3J-cb4"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal">
                                             <imageReference key="image" image="paperplane.fill" catalog="system" symbolScale="large"/>
                                         </state>
+                                        <connections>
+                                            <action selector="sendPressed:" destination="rHr-ac-p6a" eventType="touchUpInside" id="zAI-MU-ORV"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -192,7 +211,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oMb-Bd-mnl"/>
-                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="aWh-fS-jOG" firstAttribute="leading" secondItem="oMb-Bd-mnl" secondAttribute="leading" id="AqC-Gl-IA0"/>
                             <constraint firstItem="oMb-Bd-mnl" firstAttribute="bottom" secondItem="aWh-fS-jOG" secondAttribute="bottom" id="Ik8-ov-Z5m"/>
@@ -203,6 +222,10 @@
                             <constraint firstItem="oMb-Bd-mnl" firstAttribute="trailing" secondItem="aWh-fS-jOG" secondAttribute="trailing" id="nSG-IE-vyu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="messageTextField" destination="VgR-q1-D4r" id="4Kb-aw-TJU"/>
+                        <outlet property="tableView" destination="Rbe-WA-GDg" id="aKa-3g-5YZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVi-0J-cql" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -258,9 +281,12 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
+                                        <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="logInPressed:" destination="UCX-Mg-9eb" eventType="touchUpInside" id="CvF-PL-JSk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ScR-Wl-ZuI"/>
@@ -274,6 +300,10 @@
                             <constraint firstItem="ScR-Wl-ZuI" firstAttribute="trailing" secondItem="8uv-28-oOv" secondAttribute="trailing" constant="20" id="bUR-6H-06L"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="9ht-gH-wg9" id="LI9-98-hzw"/>
+                        <outlet property="passwordTextField" destination="DWa-mv-zbk" id="6ZM-I1-z8S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y6h-Yo-fAL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -284,9 +314,6 @@
         <image name="paperplane.fill" catalog="system" width="128" height="118"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
