@@ -13,16 +13,18 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        appName.text = ""
+        let appTitle = "ChatApp"
+        var charIndex = 0.0
+        for letter in appTitle {
+            Timer.scheduledTimer(withTimeInterval: 0.2 * charIndex, repeats: false){_ in
+                self.appName.text?.append(letter)
+            }
+            charIndex += 1
+        }
     }
 
-    @IBAction func registerPressed(_ sender: UIButton) {
-    }
-    
-    
-    
-    @IBAction func logInPressed(_ sender: UIButton) {
-    }
+ 
     
     
 }
