@@ -13,6 +13,7 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         appName.text = ""
         let appTitle = "ChatApp"
         var charIndex = 0.0
@@ -22,10 +23,8 @@ class WelcomeViewController: UIViewController {
             }
             charIndex += 1
         }
+        
+        
     }
-
- 
-    
-    
 }
 
