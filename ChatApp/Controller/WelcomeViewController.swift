@@ -15,7 +15,7 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
     
         appName.text = ""
-        let appTitle = "ChatApp"
+        let appTitle = K.appName
         var charIndex = 0.0
         for letter in appTitle {
             Timer.scheduledTimer(withTimeInterval: 0.2 * charIndex, repeats: false){_ in

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		8B34253A25B0A0550034B2C5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B34253925B0A0550034B2C5 /* RegisterViewController.swift */; };
 		8B34253E25B0A4AB0034B2C5 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B34253D25B0A4AB0034B2C5 /* LogInViewController.swift */; };
 		8B34254125B0A7BF0034B2C5 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B34254025B0A7BF0034B2C5 /* ChatViewController.swift */; };
+		8B48DD7625B34B740052A3C5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B48DD7525B34B740052A3C5 /* Constants.swift */; };
 		8BD894D925B2A4CD00B69085 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BD894D825B2A4CD00B69085 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		8B34253925B0A0550034B2C5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		8B34253D25B0A4AB0034B2C5 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		8B34254025B0A7BF0034B2C5 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		8B48DD7525B34B740052A3C5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8BD894D825B2A4CD00B69085 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 				8B34252825B09BED0034B2C5 /* LaunchScreen.storyboard */,
 				8B34252B25B09BED0034B2C5 /* Info.plist */,
 				8BD894D825B2A4CD00B69085 /* GoogleService-Info.plist */,
+				8B48DD7525B34B740052A3C5 /* Constants.swift */,
 			);
 			path = ChatApp;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B48DD7625B34B740052A3C5 /* Constants.swift in Sources */,
 				8B34252225B09BEC0034B2C5 /* WelcomeViewController.swift in Sources */,
 				8B34251E25B09BEC0034B2C5 /* AppDelegate.swift in Sources */,
 				8B34252025B09BEC0034B2C5 /* SceneDelegate.swift in Sources */,

@@ -14,7 +14,7 @@ class ChatViewController : UIViewController {
     @IBOutlet weak var messageTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "ChatApp"
+        title = K.appName
         navigationItem.hidesBackButton = true
     }
 
